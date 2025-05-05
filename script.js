@@ -1,9 +1,9 @@
 function formatBytes(bytes) {
-    const kb = 1024;
-    const units = ['KB', 'MB', 'GB', 'TB'];
+    const kib = 1024;
+    const units = ['KiB', 'MiB', 'GiB', 'TiB'];
     let i = 0;
-    while (bytes > kb) {
-        bytes /= kb;
+    while (bytes > kib) {
+        bytes /= kib;
         i++;
     }
     return bytes.toFixed(2) + ' ' + units[i];
